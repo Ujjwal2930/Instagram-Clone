@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>    
+    <title>Responsive Sidebar Menu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-instagram'></i>
+                <div class="logo_name">Instagram</div>
+            </div>
+            <!-- <i class='bx bx-menu' id="btn" ></i> -->
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-search' ></i>
+                    <span class="links_name">Search</span>
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass' ></i>
+                    <span class="links_name">Explore</span>
+                </a>
+                <span class="tooltip">Explore</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-videos' ></i>
+                    <span class="links_name">Reels</span>
+                </a>
+                <span class="tooltip">Reels</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-messenger' ></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Notifications</span>
+                </a>
+                <span class="tooltip">Notifications</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-plus-square' ></i>
+                    <span class="links_name">Create</span>
+                </a>
+                <span class="tooltip">Create</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-circle' ></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-alt' ></i>
+                    <span class="links_name">Threads</span>
+                </a>
+                <span class="tooltip">Threads</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-menu' ></i>
+                    <span class="links_name">More</span>
+                </a>
+                <span class="tooltip">More</span>
+            </li>
+
+            
+        </ul>
+        <li class="mode">
+            <div class="moon-sun">
+                <i class='bx bx-moon moon' ></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span> 
+    
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
+        </li>
+    </div>
+    <div class="home_content">
+
+        <div class="story-container">
+            <div class="story">
+                <img src="assets/gdsc-social-share.png" alt="Story 1">
+            </div>
+            <div class="story">
+                <img src="assets/gr.jpg" alt="Story 2">
+            </div>
+            <div class="story">
+                <img src="assets/download.jpg" alt="Story 3">
+            </div>
+            <div class="story">
+                <img src="assets/gfg.jpg" alt="Story 4">
+            </div>
+            <div class="story">
+                <img src="assets/download.png" alt="Story 5">
+            </div>
+            <div class="story">
+                <img src="assets/beach.jpg" alt="Story 6">
+            </div>
+            <div class="story">
+                <img src="assets/love.jpg" alt="Story 7">
+            </div>
+            <div class="story">
+                <img src="assets/evening.jpg" alt="Story 8">
+            </div>
+    </div>
+
+    <div class="img">
+        <!-- <img src="assets/screenshot4.png" alt=""> -->
+        <!-- <img src="assets/screenshot2.png" alt=""> -->
+    </div>
+
+    <script>
+    
+
+        let toggleSwitch = document.querySelector('.toggle-switch');
+        let moonIcon = document.querySelector('.moon');
+        let sunIcon = document.querySelector('.sun');
+        let body = document.body;
+
+        toggleSwitch.addEventListener('click', () => {
+                    body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</body>
+</html>
