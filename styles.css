@@ -128,19 +128,12 @@ body{
     top: 0;
 
 }
-/* .sidebar ul li .bx-search{
-    position: absolute;
-    z-index: 100;
-    color: #fff;
-    font-size: 20px;
-} */
 
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-  /* Sidebar and Mode Toggle */
 .sidebar .mode {
     display: flex;
     align-items: center;
@@ -157,7 +150,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Important for positioning icons */
+    position: relative; 
 }
 
 .sidebar .mode i {
@@ -194,7 +187,6 @@ body {
     transition: left 0.3s ease;
 }
 
-  /* Dark Mode */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -222,7 +214,7 @@ body.dark-mode .sun {
 }
 
 body.dark-mode .switch {
-    left: 24px; /* Move toggle switch to the right */
+    left: 24px; 
 }
 
 .home_content{
@@ -238,15 +230,15 @@ body.dark-mode .switch {
 
 .story-container {
     display: flex;
-    gap: 15px; /* Space between circles */
+    gap: 15px; 
 }
 
 .story {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Makes it circular */
-    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); /* Gradient border */
-    padding: 4px; /* Space for the border effect */
+    border-radius: 50%; 
+    background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); 
+    padding: 4px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,6 +247,6 @@ body.dark-mode .switch {
 .story img {
     width: 100%;
     height: 100%;
-    border-radius: 50%; /* Ensures the image inside is circular */
-    background-color: white; /* Optional: Background color inside */
+    border-radius: 50%; 
+    background-color: white; 
 }
